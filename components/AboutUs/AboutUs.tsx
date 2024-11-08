@@ -1,74 +1,73 @@
 import Image from "next/image";
-import ABC from "../Icons/ABC";
-import CustomerLogo from "../Icons/Customer";
+import { FaTools } from "react-icons/fa";
 import SiBadge from "../Icons/SiBadge";
 import ContentLayout from "../Layouts/ContentLayout";
 import AboutUsCard from "./AboutUsCard";
 import { FaCircleCheck } from "react-icons/fa6";
 import ProgressBar from "../ProgressBar/ProgressBar";
+import { GrLanguage } from "react-icons/gr";
 
 export default function AboutUs() {
   const AboutUSItem = [
     {
       title: "Satisfaction Guarantee",
       description:
-        "lorem ipsum dolor sit amet, consectetur adip, sed do eiusmod tempor incididunt ut, ea commodo consequat et dolore magna aliqua. Ut enim ad minim ven",
+        "We guarantee complete satisfaction with our services, ensuring timely delivery, exceptional quality, and results that exceed expectations, backed by reliable support every step of the way.",
       Icon: <SiBadge className="w-[5rem] fill-white" />,
     },
     {
       title: "Multi Language Support",
       description:
-        "lorem ipsum dolor sit amet, consectetur adip, sed do eiusmod tempor incididunt ut, ea commodo consequat et dolore magna aliqua. Ut enim ad minim ven",
-      Icon: <ABC className="w-[5rem]   " fill="#6AB15A" />,
+        "Offer seamless multi-language support to connect with global audiences, ensuring your message reaches and resonates with clients across different languages and regions",
+      Icon: <GrLanguage size={60} className="mt-3 mb-2 " color="#6AB15A" />,
     },
     {
-      title: "Professional Stuff",
+      title: "Professional Tools",
       description:
-        "lorem ipsum dolor sit amet, consectetur adip, sed do eiusmod tempor incididunt ut, ea commodo consequat et dolore magna aliqua. Ut enim ad minim ven",
-      Icon: (
-        <CustomerLogo className="w-[5rem]  stroke-lightLime stroke-[15] " />
-      ),
+        "Equipped with advanced tools and technologies, our agency ensures efficient, high-quality solutions to drive success for your business with precision and professionalism.",
+      Icon: <FaTools size={60} className="mt-3 mb-2 " color="#6AB15A" />,
     },
   ];
   return (
     <ContentLayout>
-      <section className="mb-24 mt-56">
-        <div className="w-full gap-5 grid grid-cols-3">
+      <section className="mb-24 mx-2 mt-56">
+        <div className="w-full gap-5 grid sm:grid-cols-2  lg:grid-cols-3">
           {AboutUSItem.map((item, index) => (
             <AboutUsCard key={item.title} {...item} isGreen={index == 0} />
           ))}
         </div>
-        <section className="flex mt-56 gap-10">
+        <section className="flex md:flex-row flex-col-reverse  mx-2 mt-56 gap-10">
           <div className="w-full py-10 ">
-            <h2 className="text-3xl font-bold leading-snug">
-              We Are The Best B2B & B2C Lead Generation Service For your
-              Business{" "}
+            <h2 className="text-lg sm:text-2xl font-semibold leading-snug">
+              Your Trusted Partner for Top-Quality B2B & B2C Lead Generation
+              Services
             </h2>
-            <p className="text- my-8">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-              pariatur quisquam eos. Fuga minus molestias amet, deserunt commodi
-              architecto hic explicabo, rerum harum ut assumenda doloremque
-              quidem eaque pariatur provident.
+            <p className="text-sm sm:text-base my-8">
+              We are a dedicated team specializing in B2B and B2C lead
+              generation, offering tailored solutions to help businesses grow.
+              With a focus on quality, efficiency, and customer satisfaction, we
+              connect you with the right prospects, ensuring long-term success
+              and growth for your business.
             </p>
-            <div className="w-full px-2 gap-4 justify-between mt-12 flex text-left">
-              <div>
+            <div className="w-full px-2 gap-4 justify-between mt-12 flex md:flex-row flex-col text-left">
+              <div className="w-full">
                 <p className="text-lg mb-4 flex items-center gap-2 font-medium">
                   <FaCircleCheck color="#6AB15A" size={25} />
                   24/7 Customer support
                 </p>
                 <span className="text-sm">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum soluta est, adipisci fugit inventore natus hic
+                  Our customer support is always here to assist you, ensuring
+                  prompt responses and solutions
                 </span>
               </div>
-              <div>
+              <div className="w-full">
                 <p className="text-lg flex items-center gap-2 mb-4 font-medium">
                   <FaCircleCheck color="#6AB15A" size={25} />
                   Delivery Report
                 </p>
                 <span className="text-sm ">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum soluta est, adipisci fugit inventore natus hic
+                  Our Delivery Report provides detailed insights into the
+                  progress and completion of your projects.
                 </span>
               </div>
             </div>

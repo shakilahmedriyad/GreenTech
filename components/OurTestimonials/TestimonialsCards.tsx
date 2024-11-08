@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function TestimonialsCard() {
   return (
-    <div className="flex bg-white shadow-xl px-11 py-10 space-y-5 flex-col w-full">
+    <div className="flex bg-white mx-10 shadow-xl px-11 py-10 space-y-5 flex-col w-full">
       <p className="text-gray-600 italic">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam veniam
         debitis inventore officia? Delectus eius animi consectetur quis aliquam

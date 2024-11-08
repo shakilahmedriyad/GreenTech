@@ -12,9 +12,9 @@ export default function OurWorkingArea() {
   ];
   return (
     <ContentLayout>
-      <section className="flex mt-56">
-        <div className="w-full px-12 py-20">
-          <h2 className="text-4xl font-medium">
+      <section className="flex md:flex-row flex-col-reverse mt-56">
+        <div className="w-full px-2 lg:px-12 py-20">
+          <h2 className="text-xl sm:text-4xl font-medium">
             We Communicate To Get Your Business To The Next Level
           </h2>
           <p className="text-sm text-gray-600 mt-7">
@@ -23,7 +23,7 @@ export default function OurWorkingArea() {
             reprehenderit doloremque delectus est earum id, quidem quas
             voluptatum quaerat.
           </p>
-          <div className="working_field grid grid-cols-2  gap-x-2 mt-10 gap-y-6">
+          <div className="working_field grid sm:grid-cols-2  gap-x-2 mt-10 gap-y-6">
             {WorkingArea.map((title) => (
               <WorkingAreaNameBox key={title} title={title} />
             ))}
@@ -33,19 +33,19 @@ export default function OurWorkingArea() {
               <SiBadge className="w-[3.5rem] fill-lightLime" />
               <div className="">
                 <p className="text-3xl font-bold">13+</p>
-                <p>Years of Experience</p>
+                <p className="text-sm">Years of Experience</p>
               </div>
             </div>
             <div className="flex px-3 gap-3">
               <SiBadge className="w-[3.5rem] fill-lightLime" />
               <div className="">
                 <p className="text-3xl font-bold">13+</p>
-                <p>Years of Experience</p>
+                <p className="text-sm">Years of Experience</p>
               </div>
             </div>
           </div>
         </div>
-        <div className="w-full px-10">
+        <div className="w-full px-4 lg:px-10">
           <Image
             src={"/heros/headset.jpg"}
             alt="headset"

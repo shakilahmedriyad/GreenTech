@@ -39,9 +39,9 @@ const CircleProgressBar = ({
           className="transition-all duration-500"
         />
       </svg>
-      <p className="text-white text-xl absolute top-[50%] translate-x-[-50%] translate-y-[-50%] left-[19%]">
+      {/* <p className="text-white text-xl absolute top-[50%] translate-x-[-50%] translate-y-[-50%] left-[19%]">
         {progress}%
-      </p>
+      </p> */}
     </div>
   );
 };

@@ -18,8 +18,8 @@ export default function AboutUsCard({
       )}
     >
       {Icon}
-      <h3 className="text-3xl mb-6 font-medium">{title}</h3>
-      <p>{description}</p>
+      <h3 className="text-lg sm:text-2xl mb-6 mt-5 font-medium">{title}</h3>
+      <p className="sm:text-base text-sm">{description}</p>
     </div>
   );
 }

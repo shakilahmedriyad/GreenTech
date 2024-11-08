@@ -14,7 +14,7 @@ export default function Footer() {
     { label: "Working fields", slug: "/" },
   ];
   return (
-    <footer className="bg-[#0F0F0F] ">
+    <footer className="bg-[#0F0F0F] px-5">
       <ContentLayout>
         <div className="text-white my-10 max-w-[42rem] py-32 ml-auto text-right">
           <h1 className="text-3xl font-medium">
@@ -26,7 +26,7 @@ export default function Footer() {
           </p>
           <button className="btn-primary mt-7">Contact Us</button>
         </div>
-        <div className="text-white justify-between pb-10 flex">
+        <div className="text-white grid gap-y-5 sm:grid-cols-2 md:grid-cols-3 pb-10 ">
           <div className=" space-y-4  w-full">
             <Logo className="w-[7.2rem]" />
             <p>
@@ -46,11 +46,11 @@ export default function Footer() {
               (+62)81 6754 345
             </p>
           </div>
-          <div className=" w-full flex flex-col  items-center ">
+          <div className=" w-full flex flex-col  sm:items-center ">
             <h2 className="text-2xl mt-3 uppercase mb-5 font-medium">
               Quick Links
             </h2>
-            <ul className="space-y-3">
+            <ul className=" flex gap-5 flex-row flex-wrap sm:flex-col">
               {navItem.map((item) => (
                 <li className="cursor-pointer" key={item.slug}>
                   {item.label}
